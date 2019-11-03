@@ -80,8 +80,6 @@ void sendSensorsOverOSC() {
   faderMsg.send(Udp);
   faderMsg.empty();
 
-  lastFaderValue = faderValue;
-  
   Udp.endPacket();
 
   delay(10);
